@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False">
+    
+    <VerticalStackLayout BackgroundColor="{StaticResource Gray100}" >
+        
+        <Label 
+            Text="Sobre"
+            TextColor="{StaticResource Primary}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontFamily="Kalam-Bold"
+            FontSize="35"/>
+
+        <Frame BackgroundColor="{StaticResource Gray100}" BorderColor="{StaticResource Gray100}">
+
+            <VerticalStackLayout>
+                
+                <Label 
+                    Text="Desenvolvido por Leonardo dos Santos Fernandez" 
+                    TextColor="{StaticResource Primary}"
+                    FontFamily="Kalam-Bold" 
+                    HorizontalOptions="Center"
+                    FontSize="Micro"/>
+                
+                <Label 
+                    Text="2024" 
+                    TextColor="{StaticResource Primary}"
+                    FontFamily="Kalam-Bold" 
+                    HorizontalOptions="Center"
+                    FontSize="Micro"/>
+                
+            </VerticalStackLayout>
+            
+        </Frame>
+
+        <Button 
+            Text="Voltar" 
+            HorizontalOptions="Center" 
+            TextColor="{StaticResource Secondary}" 
+            BackgroundColor="{StaticResource OffBlack}"
+            Clicked="Button_Clicked"/>
+        
+    </VerticalStackLayout>
+    
+</ContentPage>
